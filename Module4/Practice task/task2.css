@@ -1,16 +1,38 @@
-header > h1{
-    text-align: center;
-    text-decoration: underline;
+*{
+    margin: 0;
+    padding: 0;
 }
-section{
+.form1{
     width: 60%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
-form{
-    border: 2px solid red;
-    padding:10px 10%;
+.form1 fieldset{
+    padding: 5%;
+    box-shadow: 10px 10px 10px grey;
+    border: 3px ridge rgb(195, 215, 220);
+    border-style:ridge;
 }
+
 form > label{
     display: block;
-    margin: 8px 0;
+    padding-top: 10px;
+}
+
+label > .input{
+    height: 20px;
+    width: 100%;
+    margin-top: 4px;
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#feedback{
+    height: 100px;
+    width: 100%;
+}
+form button{
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
 }

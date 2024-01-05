@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2</title>
+    <link rel="shortcut icon" href="images/5988246.png" type="image/x-icon">
+    <title>Home Alone</title>
     <link rel="stylesheet" href="task2.css">
 </head>
-
 <body>
-    <header>
-        <h1>StoryTelling Contest</h1>
-    </header>
+    <header></header>
     <main>
-        <section>
-        <form>
-            <caption>Feedback Form:</caption>
-            <label for="username">Name:
-                <input type="text" name="username" id="username">
-            </label>
-            <label for="date">Date:
-                <input type="date" name="date" id="date">
-            </label>
-            <label for="rate">Give us a rating :
-                <select name="rate" id="rate">
-                    <option value="notbad">Not bad</option>
-                    <option value="good" selected>Good</option>
-                    <option value="excellent">Excellent</option>
-                </select>
-            </label>
-            <label for="feedback">Feedback:
-                <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea><br>
-            </label>
-            <button>Submit</button>
-        </form>
-    </section>
+        <section class="form1">
+            <fieldset>
+                <legend>Student Form:</legend>
+                <form>
+                    <label for="username">Your Name :
+                        <input type="text" name="username" id="username" placeholder="Enter Your Name" class="input"> 
+                    </label>
+                    <label for="useremail">Your Email:
+                        <input type="email" name="useremail" id="useremail" placeholder="Enter Your Email" class="input">
+                    </label>
+                    <label for="userpassword">Password :
+                        <input type="password" name="userpassword" id="userpassword" placeholder="Enter a password" class="input">
+                    </label>
+                    <label for="semester">Current Semester :
+                        <select name="semester" id="semester">
+                            <Option name="semester" id="firstsemester">First Semester</Option>
+                            <Option name="semester" id="secondsemester">Second Semester</Option>
+                            <Option name="semester" id="thirdsemester">Third Semester</Option>
+                            <Option name="semester" id="fourthsemester">Fourth Semester</Option>
+                            <Option name="semester" id="fifthsemester">Fifth Semester</Option>
+                            <Option name="semester" id="Sixthsemester">Sixth Semester</Option>
+                            <Option name="semester" id="Seventhsemester">Seventh Semester</Option>
+                            <Option name="semester" id="finalsemester">Final Semester</Option>
+                        </select>
+                    </label>
+                    <label for="feedback">feedback:
+                        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                    </label>
+                    <label for="termandcondition">
+                        <input type="checkbox" name="termandcondition" id="termandcondition">Accept Terms and Condition
+                    </label>
+                    <button>Submit</button>
+                </form>
+            </fieldset>
+        </section>
     </main>
     <footer></footer>
 </body>
-
 </html>
