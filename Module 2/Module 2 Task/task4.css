@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    background-color: gray;
+    color: orange;
+    font-style: italic;
+}
+.sections{
+    height: 300px;
+    width: 80%;
+    margin: 20px 10%;
+}
+#firstdiv{
+    background-color: yellow;
+    background-image: url(/images/picture1.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#seconddiv{
+    background-color: blue;
+    background-image: url(/images/picture2.jpg);
+    background-size: 200px;
+    background-repeat: repeat-x;
+    background-position: bottom left;
+}
+#thirddiv{
+    background-color: green;
+    background-image: url(/images/picture3.png);
+    background-size: 200px;
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+#fourthdiv{
+    background-color: red;
+    background-image: url(/images/download.jpg);
+    background-size: 200px;
+    background-repeat: repeat;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            color: red;
+        }
+        #fifth{
+            font-size: 30px;
+        }
+        .bgholud , .bgyellow{
+            background-color: yellow;
+        }
+        .bold{
+            font-weight: 800;
+        }
+        input[type="password"]{
+            color: red;
+        }
+        span{
+            color: aqua;
+        }
+        .blog{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h3>Explore mixed selectors</h3>
+    <p class="bgyellow ">This is <span>first paragraph</span></p>
+    <p class="bgyellow bold">This is Second paragraph</p>
+    <p>This is third paragraph</p>
+    <p>This is fourth paragraph</p>
+    <p class="bgholud" id="fifth">This is fifth paragraph</p>
+    <p>This is sixth paragraph</p>
+    <p>This is seventh paragraph</p>
+
+    <form action="#">
+        <input type="text">
+        <input type="password" name="" id="">
+    </form>
+
+    <div class="blog">
+        <h3>Blog</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur necessitatibus debitis quia vel, ut assumenda incidunt, fugiat illum consequuntur ullam placeat, dolor sequi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus magnam nobis quis eaque. Accusamus saepe molestiae aspernatur suscipit sequi aperiam ullam porro?</p>
+    </div>
+</body>
+</html>

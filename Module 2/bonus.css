@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 10px;
+}
+
+
+div{
+    color: black;
+}
+
+#id-selector{
+    background-color: blueviolet;
+}
+
+.class-one {
+    color: yellowgreen;
+}
+
+
+/* combinator selector */
+
+div ul li {
+    color: aqua;
+}
+
+.child > p {
+    background-color: cadetblue;
+}
+
+
+/* adjacent */
+
+#adjacent + p {
+    border: 2px solid blue;
+}
+
+#general ~ p {
+    border: 2px solid red;
+}
+
+
+/* attribute */
+
+[title ~="attribute-title-one"] {
+    background-color: brown;
+}
+
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: blue;
+}
+
+#hover-me:hover{
+    background-color: green;
+}
+
+
+nav p:first-child{
+    background-color: bisque;
+}
+
+nav p:nth-child(3){
+    font-size: 30px;
+}
+
+
+nav p:last-child{
+    background-color: bisque;
+}
+
+
+menu p:nth-child(odd){
+    background-color: antiquewhite;
+}
+
+menu p:nth-child(even){
+    background-color: blue;
+    color: white;
+}
+
+
+#p-e-style::first-line{
+    color: red;
+}
+
+#p-e-style::first-letter{
+    font-size: 20px;
+}
+
+
+#p-e-style::before{
+  content: "Im Before";
+  margin-right: 20px;
+}
+
+#p-e-style::after{
+  content: "Im After";
+  margin-left: 20px;
+}
+

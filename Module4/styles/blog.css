@@ -1,0 +1,34 @@
+nav > ul > li{
+    display: inline;
+    margin-right: 10px;
+}
+nav li > a{
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+nav > ul{
+    text-align: right;
+    margin: 10px 10%;
+}
+article section{
+    width: 80%;
+    margin: 0 auto;
+}
+figure{
+    margin: 0 auto;
+}
+figure > img{
+    width: 100%;
+}
+footer{
+    margin-top: 30px;
+}
+footer p{
+    text-align: center;
+}
+footer p > a{
+    text-decoration: none;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    border-radius: 12px;
+}

@@ -1,0 +1,15 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 1.2 rem;
+    text-align: center;
+    color: orange;
+    background-color: gray;
+    font-style: italic;
+}
+p , ul{
+    font-size: 0.9 rem;
+    color: black;
+    background-color: aqua;
+}
