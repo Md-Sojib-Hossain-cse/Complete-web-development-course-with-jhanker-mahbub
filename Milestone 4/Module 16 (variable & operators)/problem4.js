@@ -1,0 +1,5 @@
+const a = isNaN('11');
+const b = isNaN(2-11);
+
+console.log(a);
+console.log(b);

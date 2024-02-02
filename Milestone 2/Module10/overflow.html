@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 200px;
+            border: 2px solid tomato;
+            height: 200px;
+            /* overflow: scroll; */
+            /* overflow-x: hidden ; */
+            overflow: auto;
+        }
+        .ellipsis{
+            width: 300px;
+            border: 2px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* text-overflow: clip; */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <p class="ellipsis" title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nesciunt ipsam ab nostrum dignissimos incidunt corrupti voluptatum sapiente asperiores. Perferendis?">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nesciunt ipsam ab nostrum dignissimos incidunt corrupti voluptatum sapiente asperiores. Perferendis?
+        </p>
+    </header>
+    <div class="box">box - 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa nulla quam voluptatibus saepe animi consequatur deserunt! Eos, praesentium dicta? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum necessitatibus, exercitationem fugiat at facere odit molestias neque. Et, iste.</p>
+    </div>
+    <div class="box">box - 2
+        <p>Obcaecati quos dolores repudiandae aliquam iusto quam ducimus numquam blanditiis. In, cumque voluptatum. Itaque saepe alias quam debitis, quo nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur earum necessitatibus, exercitationem fugiat at facere odit molestias neque. Et, iste.</p>
+    </div>
+    <div class="box">box - 3
+        <p>Obcaecati quos dolores repudiandae aliquam iusto quam ducimus numquam blanditiis. In, cumque voluptatum..</p>
+    </div>
+</body>
+</html>

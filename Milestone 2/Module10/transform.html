@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container , .inner{
+            height: 100px;
+            width: 100px;
+            border: 2px solid salmon;
+            }
+        .container{
+            background-color: rgb(165, 165, 220);
+            margin: 20px;
+        }
+        .inner{
+            background-color: rgb(185, 99, 99);
+            transform: translate3d(20px , 20px , 20px) scale(0.5) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">innter - 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">innter - 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">innter - 3</div>
+    </div>
+</body>
+</html>

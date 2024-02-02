@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 400px;
+            border: 2px solid salmon;
+            background-color: black;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 50%;
+            position: relative;
+            /* animation: ping-pong 3s ease-in-out 1s infinite alternate; */
+            animation: bounce 3s ease-in-out 0s infinite alternate;
+        }
+
+        @keyframes ping-pong {
+            from{
+                left: 0px;
+                background-color: black;
+            }
+            to{
+                left:350px;
+                background-color: white;
+            }
+        }
+
+
+        @keyframes bounce {
+            0%{
+                top: 250px;
+                left: 175px;
+                background-color: red;
+                border: 2px solid red;
+            }
+            25%{
+                top: 200px;
+                left: 175px;
+                background-color: red;
+                background-color: 2px solid white;
+            }
+            50%{
+                top: 180px;
+                left: 175px;
+                background-color: white;
+                border: 2px solid red;
+            }
+            60%{
+                top: 180px;
+                left: 175px;
+                background-color: white;
+                border: 2px solid red;
+            }
+            80%{
+                top: 200px;
+                left: 175px;
+                background-color: red;
+                background-color: 2px solid white;
+            }
+            100%{
+                top: 250px;
+                left: 175px;
+                background-color: red;
+                border: 2px solid red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

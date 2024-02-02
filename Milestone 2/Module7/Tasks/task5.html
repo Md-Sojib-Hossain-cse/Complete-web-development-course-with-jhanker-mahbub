@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid;
+            /* display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr; */
+        }
+        .box1 , .box2{
+            display: flex;
+        }
+        .image{
+            width: 50%;
+        }
+        .image img{
+            width: 100%;
+        }
+        .content{
+            width: 50%;
+        }
+        .content h3{
+            font-size: 1.7rem;
+        }
+        .content p{
+            font-size: 1.2rem;
+        }
+
+
+        @media screen and (max-width:576px) {
+            .box1 {
+                flex-direction: column;
+            }
+            .image{
+                width: 100%;
+            }
+            .content{
+                width: 100%;
+            }
+
+            .box2{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="image">
+                <img src="boat-pictures-0e13id9yf45j7750.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore provident incidunt quaerat totam nostrum alias fugiat, magnam iusto, perferendis eveniet eum vel nam optio inventore temporibus odio, laboriosam blanditiis ratione culpa deleniti voluptatibus tenetur.</p>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="content">
+                <h3>Heading</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit molestias dolores aspernatur quo ea maiores porro temporibus nihil reiciendis unde, inventore, atque voluptatum voluptatibus velit similique. Itaque modi ipsa nostrum, at in aliquid ipsam!</p>
+            </div>
+            <div class="image">
+                <img src="boat-pictures-0e13id9yf45j7750.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

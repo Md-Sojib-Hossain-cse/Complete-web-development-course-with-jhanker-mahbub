@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "pinkbox pinkbox  orangebox  orangebox"
+            "pinkbox pinkbox  bluebox  greenbox"
+            ;
+            gap: 10px;
+
+        }
+        .container > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            background-color: pink;
+            grid-area: pinkbox;
+        }
+        .box2{
+            background-color: orange;
+            grid-area: orangebox;
+        }
+        .box3{
+            background-color: blueviolet;
+            grid-area: bluebox;
+        }
+        .box4{
+            background-color: green;
+            grid-area: greenbox;
+        }
+
+
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-areas: 
+                "pinkbox"
+                "orangebox"
+                "bluebox"
+                "greenbox"
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"><p>box1</p></div>
+        <div class="box2"><p>box2</p></div>
+        <div class="box3"><p>box3</p></div>
+        <div class="box4"><p>box4</p></div>
+    </div>
+</body>
+</html>

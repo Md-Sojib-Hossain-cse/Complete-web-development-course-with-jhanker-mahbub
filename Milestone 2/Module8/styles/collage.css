@@ -1,0 +1,33 @@
+.row{
+    grid-auto-rows: 400px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.row > div{
+    flex: 1;
+    border: 2px solid red;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.image{
+    height: calc((100% - 10px )/2);
+    margin-bottom: 10px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.square-collage{
+    grid-auto-rows: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.square-collage img{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,
+        .nav,
+        .main,
+        .sidebar,
+        .advertise,
+        .footer {
+            background-color: antiquewhite;
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header header header header"
+                "nav main main main main sidebar"
+                "nav main main main main advertise"
+                "footer footer footer footer footer footer"
+            ;
+            gap: 20px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .advertise {
+            grid-area: advertise;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+
+
+        /* small device  */
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "advertise"
+                    "footer"
+                ;
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width:576px) and (max-width:992px) {
+            .container{
+                grid-template-areas:
+                "header header header" 
+                "nav nav nav"
+                "sidebar main main"
+                "sidebar main main"
+                "advertise footer footer"
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h3>Header</h3>
+    </header>
+    <nav class="nav">
+        <h3>nav</h3>
+    </nav>
+    <main class="main">
+        <h3>main</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus fugiat id voluptatibus maxime a
+            tenetur. Rerum esse repudiandae officiis alias, natus modi eum aliquam porro. Maxime ullam fugit saepe
+            eligendi!</p>
+    </main>
+    <aside class="aside">
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+        </div>
+        <div class="advertise">
+            <h3>Advertise</h3>
+        </div>
+    </aside>
+    <footer class="footer">Footer</footer>
+</body>
+
+</html>
